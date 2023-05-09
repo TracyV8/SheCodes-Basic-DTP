@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SC Project DTP</title>
+  </head>
+  <style>
+   
+    h1,
+    h2 {
+      text-align: center;
+      font-family: cursive;
+    }
+    h1 {
+      text-align: center;
+      color: #490109;
+    }
+    h2 {
+      color: #ca8909;
+      border: 2px solid #490109;
+      line-height: 2;
+      border-radius: 10px;
+      max-width: 300px;
+      margin: auto;
+     
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+          }
+    p {
+      line-height: 1.5;
+      margin: 5%;
+    }
+    button {
+      border-radius: 20px;
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      background-color: #490109;
+      border: none;
+      color: #ca8909;
+      font-size: 20px;
+      padding: 10px 30px;
+      box-shadow: 5px 5px rgb(170, 166, 166);
+    }
+    button:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    .buyTicket {
+      text-align: center;
+      font-size: 24px;
+         }
+
+    .footer {
+      display: block;
+      text-align: center;
+      font-size: 11px; 
+      padding-bottom: 20px;        
+    }
+    .container {
+      padding: 20 40;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color:oldlace;
+      border-radius: 20px;
+                      
+    }
+  </style>
+  <body>
+    
+      <div class="container">
+    <h1>Darlington Theatre Players</h1>
+    <h2>Marloo Theatre</h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/647/original/images_1_?1673602392"
+      alt="DTP Logo"
+    />
+    <p>
+      Darlington Theatre Players Inc. (DTP) was established to encourage
+      participation in all aspects of theatrical arts. Formalised from an
+      existing group in the artistic hills of Darlington east of Perth, Western
+      Australia in 1956, early performances were in the local hall, formerly a
+      wine cellar. Following representations from DTP, the local shire built the
+      main hall next to the existing hall in 1960, and later rebuilt the stage
+      house and added the verandah and toilet block to the structure in 1978.
+    <br>
+    <br>
+    <a href="https://www.marlootheatre.com.au/"
+    target="_blank"
+    >    Learn more at Marloo Theatre
+    </a>
+    </p>
+    
+    <button class="shows">
+        Upcoming Show</button>
+       <div class="buyTicket">
+         <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/645/original/image_tablet_1_?1673601910"
+        target="_blank">
+            Buy Tickets</a>
+</div>
+    <p> <div class="footer"> Coded by Tracy Vonk
+        </div>
+    </p>
+    
+    </div>
+        <script>
+          function show() {
+          let name = prompt("What is your name?");
+          let reply = prompt("Would you like to buy tickets?");
+          reply = reply.toLowerCase().trim();
+          if (reply === "yes") {
+            alert ("Our next show is Wind in the Willows, Click on link below!");
+          }
+          else {
+            alert("Thank you " + name + " have a nice day! 😃 ");
+          }
+}
+
+        let shows = document.querySelector(".shows");
+        shows.addEventListener("click", show);
+    </script>
+    
+  </body>
+</html>
